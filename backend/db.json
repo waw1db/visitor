@@ -1,0 +1,18 @@
+{
+  "visitors": [
+    {
+      "id": "4",
+      "fullName": "awdawd",
+      "company": "awdawd",
+      "group": "Клиент",
+      "present": true
+    },
+    {
+      "id": "5",
+      "fullName": "авыавы",
+      "company": "выаыв",
+      "group": "Клиент",
+      "present": true
+    }
+  ]
+}

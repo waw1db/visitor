@@ -1,0 +1,64 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* исправлено */
+}
+
+.modal-backdrop.open {
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-backdrop.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-content {
+  position: relative;
+  width: 91.313rem;
+  border-radius: 1.875rem;
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.modal-content.open {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.modal-content.close {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #000;
+}

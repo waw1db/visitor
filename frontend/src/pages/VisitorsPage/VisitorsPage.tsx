@@ -39,7 +39,7 @@ const VisitorsPage: FC = () => {
     }
 
     fetch(
-      `https://visitmanager-backend.onrender.com/visitors?${params.toString()}`
+      `https://visitor-1-gh2z.onrender.com/visitors?${params.toString()}`
     )
       .then((res) => res.json())
       .then((data) => setVisitors(data))

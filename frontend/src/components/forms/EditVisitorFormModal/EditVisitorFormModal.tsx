@@ -20,7 +20,7 @@ const EditVisitorFormModal: FC<EditVisitorFormModalProps> = ({
   const handleSubmit = async (data: VisitorFormData) => {
     try {
       const response = await fetch(
-        `https://visitmanager-backend.onrender.com/visitors/${visitor.id}`,
+        `https://visitor-1-gh2z.onrender.com/visitors/${visitor.id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -54,7 +54,7 @@ const EditVisitorFormModal: FC<EditVisitorFormModalProps> = ({
 
     try {
       const response = await fetch(
-        `https://visitmanager-backend.onrender.com/visitors/${visitor.id}`,
+        `https://visitor-1-gh2z.onrender.com/visitors/${visitor.id}`,
         {
           method: "DELETE",
         }

@@ -18,7 +18,7 @@ const AddVisitorFormModal: FC<AddVisitorFormModalProps> = ({
     try {
       // Получаем текущих посетителей
       const visitorsResponse = await fetch(
-        "https://visitmanager-backend.onrender.com/visitors"
+        "https://visitor-1-gh2z.onrender.com/visitors"
       );
       if (!visitorsResponse.ok) throw new Error("Ошибка при загрузке списка");
 
@@ -37,7 +37,7 @@ const AddVisitorFormModal: FC<AddVisitorFormModalProps> = ({
 
       // Отправляем нового посетителя
       const response = await fetch(
-        "https://visitmanager-backend.onrender.com/visitors",
+        "https://visitor-1-gh2z.onrender.com/visitors",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
